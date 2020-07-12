@@ -5,6 +5,7 @@ npm-debug.log
 t.js
 .travis.yml
 .npmignore
+.idea
 /tmp/
 /.git/
 /node_modules/

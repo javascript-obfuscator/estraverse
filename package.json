@@ -1,5 +1,5 @@
 {
-  "name": "@javascript-obfuscator/estraverse",
+  "name": "javascript-obfuscator-estraverse",
   "description": "ECMAScript JS AST traversal functions",
   "homepage": "https://github.com/estools/estraverse",
   "main": "estraverse.js",

@@ -439,6 +439,36 @@ describe('chain expression', function() {
     });
 });
 
+describe('class static block', function() {
+    it('traverse', function() {
+        const tree = {
+            type: 'StaticBlock',
+            body: {
+                type: 'TryStatement',
+                handler: {
+                    type: 'BlockStatement',
+                    body: []
+                },
+                finalizer: {
+                    type: 'BlockStatement',
+                    body: []
+                }
+            }
+        };
+
+        checkDump(Dumper.dump(tree), `
+            enter - StaticBlock
+            enter - TryStatement
+            enter - BlockStatement
+            leave - BlockStatement 
+            enter - BlockStatement
+            leave - BlockStatement 
+            leave - TryStatement
+            leave - StaticBlock
+        `);
+    });
+});
+
 describe('extending keys', function() {
     it('traverse', function() {
         const tree = {

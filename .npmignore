@@ -4,6 +4,7 @@ npm-debug.log
 .vimrc.local
 t.js
 .travis.yml
+.idea
 .npmignore
 /tmp/
 /.git/
